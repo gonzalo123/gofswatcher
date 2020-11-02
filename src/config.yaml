@@ -1,0 +1,6 @@
+path: /Users/gonzalo/projects/fwatcher/src/tmp/from/
+copy_to: /Users/gonzalo/projects/fwatcher/src/tmp/to/
+extension: .txt
+
+broker: amqp://user:pass@localhost:5672/
+brokerTopic: new.file

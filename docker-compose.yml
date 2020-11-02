@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+  rabbit:
+    image: rabbitmq:3-management
+    restart: always
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      RABBITMQ_ERLANG_COOKIE:
+      RABBITMQ_DEFAULT_VHOST: /
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
